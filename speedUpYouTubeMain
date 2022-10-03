@@ -1,0 +1,12 @@
+
+# Eliminates requests to YouTube's Buffering CDN Locations (Windows Scripts)
+
+## #########
+## To Enable
+## #########
+# netsh advfirewall firewall add rule name=”speedUpYouTube” dir=in action=block remoteip=173.194.55.0/24,206.111.0.0/16 enable=yes
+
+## ##########
+## To Disable
+## ##########
+# netsh advfirewall firewall delete rule name=”speedUpYouTube”
